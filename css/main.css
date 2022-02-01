@@ -239,6 +239,18 @@ textarea {
   color: var(--primary-white-color);
 }
 
+.hero-button {
+  margin-top: 30px;
+  padding: 10px 32px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-color: var(--accent-color);
+  display: inline;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .button.primary {
   font-size: 16px;
   line-height: 1.9;
@@ -253,18 +265,6 @@ textarea {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   cursor: pointer;
-}
-
-.hero-button {
-  margin-top: 30px;
-  padding: 10px 32px;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border-color: var(--accent-color);
-  display: inline;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 /* Бэкдроп и Модалка */
@@ -369,6 +369,22 @@ textarea {
   position: relative;
 }
 
+.form-icon {
+  position: absolute;
+  fill: var(--primary-black-color);
+  top: 50%;
+  left: 12px;
+  display: inline-block;
+  -webkit-transition: fill var(--animation-time) var(--animation-function);
+  transition: fill var(--animation-time) var(--animation-function);
+}
+
+.form-agree {
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--main-text-color);
+}
+
 .form-input {
   margin: 0;
   height: 40px;
@@ -436,22 +452,6 @@ textarea {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.form-icon {
-  position: absolute;
-  fill: var(--primary-black-color);
-  top: 50%;
-  left: 12px;
-  display: inline-block;
-  -webkit-transition: fill var(--animation-time) var(--animation-function);
-  transition: fill var(--animation-time) var(--animation-function);
-}
-
-.form-agree {
-  font-size: 14px;
-  line-height: 24px;
-  color: var(--main-text-color);
-}
-
 .checkbox {
   position: absolute;
   width: 1px;
@@ -499,12 +499,9 @@ textarea {
 }
 
 /* Преимущества */
-.advances-item-title {
-  font-weight: bold;
-  line-height: 1.14;
-  text-transform: uppercase;
-  color: var(--title-text-color);
-  margin-bottom: 10px;
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .advances-item {
@@ -512,9 +509,12 @@ textarea {
   color: var(--main-text-color);
 }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+.advances-item-title {
+  font-weight: bold;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+  margin-bottom: 10px;
 }
 
 .advances-set {
@@ -1022,6 +1022,12 @@ textarea {
   color: var(--main-text-color);
 }
 
+.project-thumb {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
 .projects-card {
   padding: 20px 24px 20px 24px;
   border-right: 1px solid #eeeeee;
@@ -1081,11 +1087,5 @@ textarea {
   opacity: 1;
   -webkit-transform: translatey(0);
           transform: translatey(0);
-}
-
-.project-thumb {
-  position: relative;
-  display: block;
-  overflow: hidden;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,21 +1,21 @@
 /* Преимущества */
 
-.advances-item-title {
-  font-weight: bold;
-  line-height: 1.14;
-  text-transform: uppercase;
-  color: var(--title-text-color);
-  margin-bottom: 10px;
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .advances-item {
   line-height: 1.71;
   color: var(--main-text-color);
-}
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  &-title {
+    font-weight: bold;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--title-text-color);
+    margin-bottom: 10px;
+  }
 }
 
 .advances-set {
@@ -23,12 +23,12 @@
   padding: 0;
   margin-left: calc(-1 * var(--card-set-gap));
   margin-top: calc(-1 * var(--card-set-gap));
-}
 
-.advances-set-item {
-  flex-basis: calc(100% / 4 - var(--card-set-gap));
-  margin-left: var(--card-set-gap);
-  margin-top: var(--card-set-gap);
+  &-item {
+    flex-basis: calc(100% / 4 - var(--card-set-gap));
+    margin-left: var(--card-set-gap);
+    margin-top: var(--card-set-gap);
+  }
 }
 
 .thumb {
