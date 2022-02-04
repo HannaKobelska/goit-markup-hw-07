@@ -21,14 +21,14 @@
     margin-top: calc(-1 * var(--card-set-gap));
   }
 
-  &-set-item {
+  &-set__item {
     position: relative;
     flex-basis: calc(100% / 3 - var(--card-set-gap));
     margin-left: var(--card-set-gap);
     margin-top: var(--card-set-gap);
   }
 
-  &-name {
+  &-set__name {
     position: absolute;
     width: 100%;
     height: 70px;

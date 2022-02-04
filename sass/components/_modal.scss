@@ -39,7 +39,7 @@
   transition: transform var(--animation-time) var(--animation-function),
     opacity var(--animation-time) var(--animation-function);
 
-  .hero-button {
+  .hero__button {
     padding: 10px 56px;
   }
 }
@@ -74,7 +74,7 @@
   margin-left: auto;
   margin-right: auto;
 
-  &-title {
+  &__title {
     font-weight: bold;
     font-size: 20px;
     line-height: 1.15;
@@ -83,14 +83,14 @@
     text-align: center;
   }
 
-  &-field {
+  &__field {
     margin-bottom: 10px;
     display: flex;
     flex-direction: column;
     position: relative;
   }
 
-  &-icon {
+  &__icon {
     position: absolute;
     fill: var(--primary-black-color);
     top: 50%;
@@ -100,14 +100,14 @@
     transition: fill var(--animation-time) var(--animation-function);
   }
 
-  &-agree {
+  &__agree {
     font-size: 14px;
     line-height: 24px;
     color: var(--main-text-color);
   }
 }
 
-.form-input {
+.form__input {
   margin: 0;
   height: 40px;
   padding: 6px 10px 6px 42px;
@@ -123,13 +123,13 @@
     cursor: pointer;
   }
 
-  &:hover + .form-icon,
-  &:focus + .form-icon {
+  &:hover + .form__icon,
+  &:focus + .form__icon {
     fill: var(--accent-color);
   }
 }
 
-.form-field label {
+.form__field label {
   margin-bottom: 4px;
   font-size: 12px;
   line-height: 1.17;
@@ -137,7 +137,7 @@
   color: var(--main-text-color);
 }
 
-.form-field textarea {
+.form__field textarea {
   padding: 12px 16px;
   margin: 0;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -182,7 +182,7 @@
   }
 }
 
-.form-field.policy {
+.form__field.policy {
   align-items: center;
   width: 425px;
   height: 24px;

@@ -91,6 +91,18 @@ textarea {
   border-bottom: 1px solid #ececec;
 }
 
+.header-set {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .logo {
   font-family: Raleway, sans-serif;
   font-style: normal;
@@ -120,7 +132,7 @@ textarea {
   margin-left: 93px;
 }
 
-.site-nav .link {
+.site-nav__link {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -134,16 +146,16 @@ textarea {
   transition: color var(--animation-time) var(--animation-function);
 }
 
-.site-nav .link:hover, .site-nav .link:focus {
+.site-nav__link:hover, .site-nav__link:focus {
   color: var(--accent-color);
 }
 
-.site-nav .link.current {
+.site-nav .site-nav__link--current {
   color: var(--accent-color);
   position: relative;
 }
 
-.site-nav .link.current::after {
+.site-nav .site-nav__link--current::after {
   display: block;
   position: absolute;
   content: "";
@@ -155,7 +167,7 @@ textarea {
   border-radius: 2px;
 }
 
-.link.last {
+.site-nav__link--last {
   margin-right: 0;
 }
 
@@ -181,18 +193,6 @@ textarea {
 .nav-contacts:hover, .nav-contacts:focus {
   color: var(--accent-color);
   fill: var(--accent-color);
-}
-
-.header-set {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .nav-set,
@@ -229,7 +229,7 @@ textarea {
   background-size: cover;
 }
 
-.hero-title {
+.hero__title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -239,7 +239,7 @@ textarea {
   color: var(--primary-white-color);
 }
 
-.hero-button {
+.hero__button {
   margin-top: 30px;
   padding: 10px 32px;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -310,7 +310,7 @@ textarea {
   transition: transform var(--animation-time) var(--animation-function), opacity var(--animation-time) var(--animation-function), -webkit-transform var(--animation-time) var(--animation-function);
 }
 
-.modal .hero-button {
+.modal .hero__button {
   padding: 10px 56px;
 }
 
@@ -348,7 +348,7 @@ textarea {
   margin-right: auto;
 }
 
-.form-title {
+.form__title {
   font-weight: bold;
   font-size: 20px;
   line-height: 1.15;
@@ -357,7 +357,7 @@ textarea {
   text-align: center;
 }
 
-.form-field {
+.form__field {
   margin-bottom: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -369,7 +369,7 @@ textarea {
   position: relative;
 }
 
-.form-icon {
+.form__icon {
   position: absolute;
   fill: var(--primary-black-color);
   top: 50%;
@@ -379,13 +379,13 @@ textarea {
   transition: fill var(--animation-time) var(--animation-function);
 }
 
-.form-agree {
+.form__agree {
   font-size: 14px;
   line-height: 24px;
   color: var(--main-text-color);
 }
 
-.form-input {
+.form__input {
   margin: 0;
   height: 40px;
   padding: 6px 10px 6px 42px;
@@ -397,17 +397,17 @@ textarea {
   transition: border-color var(--animation-time) var(--animation-function);
 }
 
-.form-input:hover, .form-input:focus {
+.form__input:hover, .form__input:focus {
   border-color: var(--accent-color);
   cursor: pointer;
 }
 
-.form-input:hover + .form-icon,
-.form-input:focus + .form-icon {
+.form__input:hover + .form__icon,
+.form__input:focus + .form__icon {
   fill: var(--accent-color);
 }
 
-.form-field label {
+.form__field label {
   margin-bottom: 4px;
   font-size: 12px;
   line-height: 1.17;
@@ -415,7 +415,7 @@ textarea {
   color: var(--main-text-color);
 }
 
-.form-field textarea {
+.form__field textarea {
   padding: 12px 16px;
   margin: 0;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -424,28 +424,28 @@ textarea {
   border-radius: 4px;
 }
 
-.form-field textarea::-webkit-input-placeholder {
+.form__field textarea::-webkit-input-placeholder {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 
-.form-field textarea:-ms-input-placeholder {
+.form__field textarea:-ms-input-placeholder {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 
-.form-field textarea::-ms-input-placeholder {
+.form__field textarea::-ms-input-placeholder {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 
-.form-field textarea::placeholder {
+.form__field textarea::placeholder {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
@@ -482,7 +482,7 @@ textarea {
   border-radius: 2px;
 }
 
-.form-field.policy {
+.form__field.policy {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -504,19 +504,6 @@ textarea {
   padding-bottom: 94px;
 }
 
-.advances-item {
-  line-height: 1.71;
-  color: var(--main-text-color);
-}
-
-.advances-item-title {
-  font-weight: bold;
-  line-height: 1.14;
-  text-transform: uppercase;
-  color: var(--title-text-color);
-  margin-bottom: 10px;
-}
-
 .advances-set {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -526,14 +513,14 @@ textarea {
   margin-top: calc(-1 * var(--card-set-gap));
 }
 
-.advances-set-item {
+.advances-set__item {
   -ms-flex-preferred-size: calc(100% / 4 - var(--card-set-gap));
       flex-basis: calc(100% / 4 - var(--card-set-gap));
   margin-left: var(--card-set-gap);
   margin-top: var(--card-set-gap);
 }
 
-.thumb {
+.advances-set__thumb {
   width: 270px;
   height: 120px;
   background-color: var(--team-background-color);
@@ -548,6 +535,19 @@ textarea {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.advances-set__title {
+  font-weight: bold;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+  margin-bottom: 10px;
+}
+
+.advances-set__text {
+  line-height: 1.71;
+  color: var(--main-text-color);
 }
 
 /* Чем мы занимаемся */
@@ -573,7 +573,7 @@ textarea {
   margin-top: calc(-1 * var(--card-set-gap));
 }
 
-.works-set-item {
+.works-set__item {
   position: relative;
   -ms-flex-preferred-size: calc(100% / 3 - var(--card-set-gap));
       flex-basis: calc(100% / 3 - var(--card-set-gap));
@@ -581,7 +581,7 @@ textarea {
   margin-top: var(--card-set-gap);
 }
 
-.works-name {
+.works-set__name {
   position: absolute;
   width: 100%;
   height: 70px;

@@ -3,6 +3,12 @@
 
 .header {
   border-bottom: 1px solid #ececec;
+
+  &-set {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .logo {
@@ -30,7 +36,7 @@
   padding: 0;
   margin-left: 93px;
 
-  .link {
+  &__link {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -50,7 +56,7 @@
     }
   }
 
-  .link.current {
+  .site-nav__link--current {
     color: var(--accent-color);
     position: relative;
 
@@ -68,7 +74,7 @@
   }
 }
 
-.link.last {
+.site-nav__link--last {
   margin-right: 0;
 }
 
@@ -94,12 +100,6 @@
     color: var(--accent-color);
     fill: var(--accent-color);
   }
-}
-
-.header-set {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .nav-set,
