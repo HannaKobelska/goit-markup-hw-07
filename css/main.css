@@ -765,14 +765,14 @@ textarea {
 }
 
 .footer .signup {
-  margin-left: 93px;
+  margin-left: auto;
 }
 
 .footer .social-links-set {
   margin: 0;
 }
 
-.footer .hero-button {
+.footer .hero__button {
   margin-top: 0;
   font-weight: bold;
   padding-top: 10px;
